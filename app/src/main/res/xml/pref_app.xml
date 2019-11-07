@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        app:key="@string/spk_runningAction"
+        app:title="@string/label_runningAction"
+        app:defaultValue="@string/spdv_runningAction"
+        app:entries="@array/label_mediaActions"
+        app:entryValues="@array/entries_mediaActions"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        app:key="@string/spk_ridingAction"
+        app:title="@string/label_ridingAction"
+        app:defaultValue="@string/spdv_ridingAction"
+        app:entries="@array/label_mediaActions"
+        app:entryValues="@array/entries_mediaActions"
+        app:useSimpleSummaryProvider="true" />
+
+</PreferenceScreen>

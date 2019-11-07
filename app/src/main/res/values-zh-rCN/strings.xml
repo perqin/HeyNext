@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hey Next</string>
+    <string name="label_bandNotificationListenerService">手环通知监听服务。</string>
+    <string name="grant">授权</string>
+    <string name="label_runningAction">收到跑步通知时</string>
+    <string name="label_ridingAction">收到骑行通知时</string>
+    <string name="text_permissionRequired">应用需要获得通知访问权限才能正常工作。</string>
+    <string-array name="label_mediaActions">
+        <item>无动作</item>
+        <item>下一首</item>
+        <item>上一首</item>
+    </string-array>
+</resources>

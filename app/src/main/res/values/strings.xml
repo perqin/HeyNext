@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hey Next</string>
+    <string name="label_bandNotificationListenerService">Band notification listener service.</string>
+    <string name="text_permissionRequired">Notification Access permission is required for this app working properly.</string>
+    <string name="grant">Grant</string>
+    <string name="label_runningAction">Action on receiving Running</string>
+    <string name="label_ridingAction">Action on receiving Riding</string>
+    <string-array name="label_mediaActions">
+        <item>No action</item>
+        <item>Next</item>
+        <item>Previous</item>
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="spv_actionNoAction" translatable="false">noAction</string>
+    <string name="spv_actionNext" translatable="false">next</string>
+    <string name="spv_actionPrevious" translatable="false">previous</string>
+    <string-array name="entries_mediaActions">
+        <item>@string/spv_actionNoAction</item>
+        <item>@string/spv_actionNext</item>
+        <item>@string/spv_actionPrevious</item>
+    </string-array>
+    <string name="spk_runningAction" translatable="false">runningAction</string>
+    <string name="spdv_runningAction" translatable="false">@string/spv_actionNoAction</string>
+    <string name="spk_ridingAction" translatable="false">ridingAction</string>
+    <string name="spdv_ridingAction" translatable="false">@string/spv_actionNext</string>
+</resources>

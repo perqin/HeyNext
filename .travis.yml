@@ -1,0 +1,23 @@
+env:
+  global:
+    - secure: "DyJdUnPjHY6weuXq33y00TGRJz6xS8ml9VD+YxryP6p5kmIkY6GjAH6nkI5aX301tREo1kfLVegLqN0XEv7cJG2JxpeRuRl7cY++azfVVvlzyee+2X1tnbdYivKsnGpe3uLATuV0JppRczo2EwVYjtxad0lnlLooFX0tyH95Dlz892ZEBOB132vfZ9l6QjdnTZtrR4iBfcMIYWh6DghI5QMP4RdNWBeLgHjLc/Vr3nX7ZNkRWCgXAONhirVHWLHeb6muyKUXCWuLKorgDeoe+qKGxHEM02XxuXOjMmI+7QO2P5f1obcT/vmxaVPYeqkDXh6uR8SlSJQCB4R1n41b2KGzWoaFRcP9UzBHmiWMde+k7kp6MS20/deVBeOaYWX30kG2YIP+ij9+T3+e5kuVS68mRxWDL+2LzmQpmfDDt+/H6wgCBzYn6w3Ug6iBpKx+iQkBo6VT9GelY/rUi9s33jxeXi0GECcrjF3g1avhfG+VZdMMmNAwO10AeLy13NOlprwgK76Phvw5ju9e+b7idwDEahWRPwF9jlbRexPGYUvmXUK3Nac+t3mb5Wsg6v5z7hiM2KSW/u+7zbT450iU364VF4PqeB44dtgZr7pYmxDnGCQhb/VHS9mJWBO4LR/Pwhn6pfDDmet8egtlBDBTr3uxCNjKYNczb+DMal+Psrs="
+
+language: android
+dist: trusty
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-29.0.2
+    - android-29
+
+script:
+  - ./gradlew :app:assembleDebug
+
+deploy:
+  provider: releases
+  api_key: $PERQIN_BOT_GITHUB_PAT
+  file: $TRAVIS_BUILD_DIR/app/build/outputs/apk/debug/app-debug.apk
+  skip_cleanup: true
+  on:
+    tags: true

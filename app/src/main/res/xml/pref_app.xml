@@ -6,15 +6,20 @@
         app:title="@string/label_runningAction"
         app:defaultValue="@string/spdv_runningAction"
         app:entries="@array/label_mediaActions"
-        app:entryValues="@array/entries_mediaActions"
-        app:useSimpleSummaryProvider="true" />
+        app:entryValues="@array/entries_mediaActions" />
 
     <ListPreference
         app:key="@string/spk_ridingAction"
         app:title="@string/label_ridingAction"
         app:defaultValue="@string/spdv_ridingAction"
         app:entries="@array/label_mediaActions"
-        app:entryValues="@array/entries_mediaActions"
-        app:useSimpleSummaryProvider="true" />
+        app:entryValues="@array/entries_mediaActions" />
+
+    <ListPreference
+        app:key="@string/spk_v2ExerciseAction"
+        app:title="@string/label_v2ExerciseAction"
+        app:defaultValue="@string/spdv_v2ExerciseAction"
+        app:entries="@array/label_mediaActions"
+        app:entryValues="@array/entries_mediaActions" />
 
 </PreferenceScreen>

@@ -11,4 +11,7 @@
         <item>下一首</item>
         <item>上一首</item>
     </string-array>
+    <string name="label_v2ExerciseAction">收到运动通知时</string>
+    <string name="text_v1Required">黑加App v1未安装</string>
+    <string name="text_v2Required">黑加App v2未安装</string>
 </resources>

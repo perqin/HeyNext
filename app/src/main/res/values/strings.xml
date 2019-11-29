@@ -5,6 +5,9 @@
     <string name="grant">Grant</string>
     <string name="label_runningAction">Action on receiving Running</string>
     <string name="label_ridingAction">Action on receiving Riding</string>
+    <string name="label_v2ExerciseAction">Action on receiving Doing Exercise</string>
+    <string name="text_v1Required">HeyPlus app v1 is not installed.</string>
+    <string name="text_v2Required">HeyPlus app v2 is not installed.</string>
     <string-array name="label_mediaActions">
         <item>No action</item>
         <item>Next</item>

@@ -11,4 +11,6 @@
     <string name="spdv_runningAction" translatable="false">@string/spv_actionNoAction</string>
     <string name="spk_ridingAction" translatable="false">ridingAction</string>
     <string name="spdv_ridingAction" translatable="false">@string/spv_actionNext</string>
+    <string name="spk_v2ExerciseAction" translatable="false">v2ExerciseAction</string>
+    <string name="spdv_v2ExerciseAction" translatable="false">@string/spv_actionNext</string>
 </resources>

@@ -40,11 +40,12 @@ class BandNotificationListenerService : NotificationListenerService() {
     override fun onNotificationPosted(sbn: StatusBarNotification) {
         runOnUiThread {
             if (sbn.packageName == PN_HEY_PLUS) {
-                val notificationText = sbn.notification.extras.get(Notification.EXTRA_TEXT)
+                val notificationText = sbn.notification.extras.get(Notification.EXTRA_TEXT) as String
                 Log.i(TAG, "onNotificationPosted: Received notification from HeyPlus: $notificationText")
                 when (notificationText) {
                     TEXT_RUNNING -> getString(R.string.spk_runningAction)
                     TEXT_RIDING -> getString(R.string.spk_ridingAction)
+                    TEXT_V2_EXERCISE -> getString(R.string.spk_v2ExerciseAction)
                     else -> return@runOnUiThread
                 }.let {
                     // Get action for this type of notification
@@ -71,8 +72,8 @@ class BandNotificationListenerService : NotificationListenerService() {
 
     companion object {
         private const val TAG = "BandNotiService"
-        private const val PN_HEY_PLUS = "com.ryeex.groot"
         private const val TEXT_RUNNING = "跑步定位中"
         private const val TEXT_RIDING = "骑行定位中"
+        private const val TEXT_V2_EXERCISE = "运动定位中..."
     }
 }
